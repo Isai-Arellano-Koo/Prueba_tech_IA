@@ -1,0 +1,21 @@
+{
+  "name": "clients-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "amqplib": "^0.10.9",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.1",
+    "ioredis": "^5.8.2",
+    "mysql2": "^3.15.3"
+  }
+}
