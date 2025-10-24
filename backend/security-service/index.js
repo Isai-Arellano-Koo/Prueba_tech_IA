@@ -31,7 +31,7 @@ function genToken() {
 fastify.post('/token/generate', async (req, reply) => {
   const { user_name } = req.body || {};
   const token = genToken();
-  const expires_at = new Date(Date.now() + 1000 * 60 * 60 * 24); // opcional: 24h
+  const expires_at = new Date(Date.now() + 1000 * 60 * 60 * 24); // vence en: 24h
   await pool.query('INSERT INTO tokens (token, user_name, expires_at) VALUES (?, ?, ?)', [token, user_name || null, expires_at]);
   return { token, expires_at };
 });
