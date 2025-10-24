@@ -11,6 +11,5 @@ yarn-error.log*
 .idea/
 
 # Angular (frontend)
-.angular/
 out-tsc/
 coverage/
